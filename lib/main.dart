@@ -36,7 +36,7 @@ class MyApp extends ConsumerWidget {
         primarySwatch: Colors.blue,
       ),
       onGenerateRoute: ((settings) => generateRoute(settings)),
-      home: TodoScreen (),
+      home: LoginScreen (),
     );
   }
 }
