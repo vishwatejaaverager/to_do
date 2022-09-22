@@ -30,13 +30,15 @@ class TodosRepository {
   }
 
   void saveTodoToFirebase(
-      {Todo todo
+      {required String title,
+      required String description,
+      required bool isDone,
       required BuildContext context}) async {
     try {
       String uid = auth.currentUser!.uid;
       var todo = Todo(
           createdTime: DateTime.now(),
-          title: todo.title,
+          title: title,
           description: description,
           isDone: isDone);
 
